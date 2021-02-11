@@ -80,3 +80,43 @@ body {
     line-height: 60px;
     /* Vertically center the text there */
 }
+
+li {
+    list-style: none;
+}
+
+#aboutMeText {
+    padding-left: 28%;
+}
+
+@media only screen and (max-width:1199px) {
+    #aboutMeText {
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    #pictureHolder {
+        float: none;
+    }
+    #mePicture {
+        margin: auto;
+    }
+}
+
+#easterEggDiv1 {
+    display: none;
+}
+
+.experienceCard {
+    padding: 0;
+}
+
+.experienceInfo {
+    background-color: #e9ecef;
+    padding: 2rem 1rem;
+}
+
+.withBullets {
+    list-style: circle;
+}
