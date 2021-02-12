@@ -108,15 +108,30 @@ li {
     display: none;
 }
 
-.experienceCard {
+.resumeCard {
     padding: 0;
 }
 
-.experienceInfo {
+.resumeInfo {
     background-color: #e9ecef;
     padding: 2rem 1rem;
+    /*display: none;*/
 }
 
 .withBullets {
     list-style: circle;
+}
+
+.indented {
+    padding: 2%;
+}
+
+.down {
+    margin-right: 1%;
+    transform: rotate(0deg);
+}
+
+.up {
+    margin-right: 1%;
+    transform: rotate(180deg);
 }
