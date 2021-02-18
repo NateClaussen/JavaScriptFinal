@@ -5,11 +5,29 @@
 //WHEREFORE :) I'm just going to animate with JQuery :)
 
 
-function toggleSlide(element) {
-    var picture = element.getElementsByClassName("arrowIcon")
+
+//https://stackoverflow.com/questions/7002039/easiest-way-to-toggle-2-classes-in-jquery
+
+
+function toggleSlide(selectedCard) {
+    var content = selectedCard.getElementsByClassName("resumeInfo");
+    if (content[0].style.display === "none") {
+        $(content).slideDown();
+    } else {
+        $(content).slideUp();
+    }
+    var picture = selectedCard.getElementsByClassName("arrowIcon")
     $(picture).toggleClass("up down");
 
 }
+
+function toggleAllSlides() {
+
+}
+
+$(document).ready(function() {
+    toggleAllSlides();
+});
 
 
 //SlidePanels
@@ -19,22 +37,9 @@ var resumeCardHolder = document.getElementById("resumeCardHolder");
 var allCards = resumeCardHolder.getElementsByClassName("resumeCard");
 //add Click event to each card
 for (var i = 0; i < allCards.length; i++) {
-    allCards[i].addEventListener("click", toggleSlide(allcards[i]), false);
-}
-/*
-var dropDowns = document.getElementsByClassName("resumeCard");
-for (var i = 0; i < dropDowns.length; i++) {
-    dropDowns[i].addEventListener("click", function(event) {
-        alert("I was clicked!");
+    allCards[i].addEventListener("click", function(event) {
+        event.preventDefault();
+        toggleSlide(this);
     }, false);
+    allCards[i].click();
 }
-
-var cardHolder = document.getElementById("resumeCardHolder");
-var allCards = cardHolder.getElementsByClassName("resumeCard");
-
-for (var i = 0; i < allCards.length; i++) {
-    allCards[i].addEventListener("click", function() {
-        alert("one of allCards was clicked!");
-    }, false);
-}
-*/

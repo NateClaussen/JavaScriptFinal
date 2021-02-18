@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nate Claussen Portfolio</title>
+    <link rel="stylesheet" href="../Resources/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Resources/css/site.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-toggleable-lg navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <!--ASP STUFF NEXT LINE-->
+                <a class="navbar-brand" href="index.html">Nate Claussen</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-lg-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="skills.html">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="resume.html">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="experience.html">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="contact.html">Contatct</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="forFun.html">For Fun</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item" id="currentTime"></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            <h4 class="alert-warning text-center">**Disclaimer! Form is validated, but if you submit, then it won't send to anything!**</h4>
+
+            <form id="contactForm" class="needs-validation" novalidate>
+                <!--FullName-->
+                <div class="form-group">
+                    <label for="fullName">Full Name*</label>
+                    <input type="text" class="form-control" id="fullName" placeholder="Full Name" required>
+                    <div class="invalid-feedback">
+                        Please enter your name
+                    </div>
+                </div>
+                <!--/FullName-->
+                <!--Email-->
+                <div class="form-group">
+                    <label for="emailAddress">Email address*</label>
+                    <input type="email" class="form-control" id="emailAddress" placeholder="name@example.com" required>
+                    <div class="invalid-feedback">
+                        Please enter a valid email!
+                    </div>
+                </div>
+                <!--/Email-->
+                <!--State-->
+                <div class="form-group">
+                    <label for="stateList">State*</label>
+                    <select class="form-control form-select" id="stateList" required>
+                        <option selected disabled value="">Select State</option>
+                        <option>Alabama</option>
+                        <option>Alaska</option>
+                        <option>Arizona</option>
+                        <option>Arkansas</option>
+                        <option>California</option>
+                        <option>Colorado</option>
+                        <option>Connecticut</option>
+                        <option>Delaware</option>
+                        <option>Florida</option>
+                        <option>Georgia</option>
+                        <option>Hawaii</option>
+                        <option>Idaho</option>
+                        <option>Illinois</option>
+                        <option>Indiana</option>
+                        <option>Iowa</option>
+                        <option>Kansas</option>
+                        <option>Kentucky</option>
+                        <option>Louisiana</option>
+                        <option>Maine</option>
+                        <option>Maryland</option>
+                        <option>Massachusetts</option>
+                        <option>Michigan</option>
+                        <option>Minnesota</option>
+                        <option>Mississippi</option>
+                        <option>Missouri</option>
+                        <option>Montana</option>
+                        <option>Nebraska</option>
+                        <option>Nevada</option>
+                        <option>New Hampshire</option>
+                        <option>New Jersey</option>
+                        <option>New Mexico</option>
+                        <option>New York</option>
+                        <option>North Carolina</option>
+                        <option>North Dakota</option>
+                        <option>Ohio</option>
+                        <option>Oklahoma</option>
+                        <option>Oregon</option>
+                        <option>Pennsylvania</option>
+                        <option>Rhode Island</option>
+                        <option>South Carolina</option>
+                        <option>South Dakota</option>
+                        <option>Tennassee</option>
+                        <option>Texas</option>
+                        <option>Utah</option>
+                        <option>Vermont</option>
+                        <option>Virginia</option>
+                        <option>Washington</option>
+                        <option>West Virginia</option>
+                        <option>Wisconsin</option>
+                        <option>Wyoming</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please choose a state!
+                    </div>
+                </div>
+                <!--/State-->
+                <!--Comments-->
+                <div class="form-group">
+                    <label for="commentText">Any Comments? (optional)</label>
+                    <textarea class="form-control" id="commentText" rows="3"></textarea>
+                    <div class="invalid-feedback">
+                        Please leave me some feedback!
+                    </div>
+                </div>
+                <!--/Comments-->
+                <!--Submit-->
+                <div class="form-group">
+                    <button type="submit" class="btn btn-outline-success">Submit</button>
+                </div>
+                <!--/Submit-->
+            </form>
+
+            <!--THIS IS WHERE I PUT MY ACTUAL PAGE IN-->
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2021 - GuessWhoMe
+        </div>
+    </footer>
+    <script src="../Resources/lib/jquery/dist/jquery.min.js"></script>
+    <script src="../Resources/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../Resources/js/site.js"></script>
+    <script src="../Resources/js/Pages/contact.js"></script>
+</body>
+
+</html>

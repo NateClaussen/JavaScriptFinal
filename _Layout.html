@@ -5,27 +5,45 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nate Claussen Portfolio</title>
-    <link rel="stylesheet" href="Resources/lib/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Resources/css/site.css">
+    <link rel="stylesheet" href="../Resources/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Resources/css/site.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-lg navbar-toggleable-lg navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
                 <!--ASP STUFF NEXT LINE-->
-                <a class="navbar-brand" href="#">Nate Claussen</a>
+                <a class="navbar-brand" href="index.html">Nate Claussen</a>
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                <div class="navbar-collapse collapse d-lg-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="#">Home</a>
+                            <a class="nav-link text-dark" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="#">Privacy</a>
+                            <a class="nav-link text-dark" href="skills.html">Skills</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="resume.html">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="experience.html">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="contact.html">Contatct</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="forFun.html">For Fun</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item" id="currentTime"></li>
                     </ul>
                 </div>
             </div>
@@ -33,18 +51,20 @@
     </header>
     <div class="container">
         <main role="main" class="pb-3">
+
             <!--THIS IS WHERE I PUT MY ACTUAL PAGE IN-->
         </main>
     </div>
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2021 - GuessWhoMe ;) - <a href="#">Privacy</a>
+            &copy; 2021 - GuessWhoMe
         </div>
     </footer>
-    <script src="Resources/lib/jquery/dist/jquery.min.js"></script>
-    <script src="Resources/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="Resources/js/site.js"></script>
+    <script src="../Resources/lib/jquery/dist/jquery.min.js"></script>
+    <script src="../Resources/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../Resources/js/site.js"></script>
+    <!--<script src="../Resources/js/Pages/index.js"></script>-->
 </body>
 
 </html>
