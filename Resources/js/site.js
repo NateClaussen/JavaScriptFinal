@@ -1,6 +1,5 @@
 //Time Div in Nav
 $(document).ready(function() {
-    //Make sure all easter eggs are hidden on page load
     setInterval(setTime(), 8.64e+7);
 });
 

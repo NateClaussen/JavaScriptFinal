@@ -135,3 +135,12 @@ li {
     margin-right: 1%;
     transform: rotate(180deg);
 }
+
+.skill {
+    display: inline-block;
+}
+
+.codeSnip {
+    height: 500px;
+    overflow: scroll;
+}
