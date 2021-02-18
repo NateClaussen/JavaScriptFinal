@@ -144,3 +144,9 @@ li {
     max-height: 500px;
     overflow: scroll;
 }
+
+#dashSpan {
+    font-size: 4em;
+    display: inline-block;
+    line-height: 50px;
+}

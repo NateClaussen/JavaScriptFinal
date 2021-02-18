@@ -48,7 +48,24 @@
     </header>
     <div class="container">
         <main role="main" class="pb-3">
+            <div class="text-center">
+                <div id="imageContainer">
+                    <img id="hangPic" src="../Resources/images/hangman/0.png" alt="Hangman picture">
+                </div>
+                <div id="toGuessDiv"><span id="dashSpan"></span></div>
+                <span>Guessed Letters:</span>
+                <div id="guessLetterDiv"></div>
 
+                <br>
+                <form id="inputForm">
+                    <label for="userGuess">Guess Your Letter</label>
+                    <input type="text" id="userGuess">
+                    <button type="submit" class="btn btn-outline-primary">Guess!</button>
+                    <br><span id="statusMessage"></span>
+                </form>
+
+
+            </div>
             <!--THIS IS WHERE I PUT MY ACTUAL PAGE IN-->
         </main>
     </div>
