@@ -150,3 +150,7 @@ li {
     display: inline-block;
     line-height: 50px;
 }
+
+.hidden {
+    display: none;
+}
