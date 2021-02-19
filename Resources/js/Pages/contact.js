@@ -1,6 +1,3 @@
-//email validation regex: ^((([!#$%&'*+\-/=?^_`{|}~\w])|([!#$%&'*+\-/=?^_`{|}~\w][!#$%&'*+\-/=?^_`{|}~\.\w]{0,}[!#$%&'*+\-/=?^_`{|}~\w]))[@]\w+([-.]\w+)*\.\w+([-.]\w+)*)$
-//State validation regeg: ^(?!(Choose State)$).*$
-
 var contactForm = document.getElementById("contactForm");
 contactForm.addEventListener("submit", function(event) {
     //Make sure it doesn't submit

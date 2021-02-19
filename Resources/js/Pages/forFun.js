@@ -1,3 +1,4 @@
+//HangMan
 //VARIABLES
 var wordBank = [
     "PROGRAMMER",
@@ -230,3 +231,4 @@ playAgainButton.addEventListener("click", function(event) {
 
 ///when the script loads, startGame();
 startGame();
+///Hangman
